@@ -1,0 +1,6 @@
+/* assets/css/style.css - starter */
+body { font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; }
+.hero { background: #f8f9fa; }
+.hero .display-5 { letter-spacing: 0.5px; }
+footer { font-size: 0.95rem; }
+.card-img-top { height: 180px; object-fit: cover; }

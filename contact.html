@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact & Book — Sri Vijayadurga Car Garage</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Sri Vijayadurga Car Garage</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain5">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMain5">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="reviews.html">Reviews</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="py-5">
+    <div class="container">
+      <h1 class="mb-4">Book Appointment</h1>
+
+      <div class="row">
+        <div class="col-lg-6">
+          <form id="bookingForm" class="needs-validation" novalidate>
+            <div class="mb-3">
+              <label for="name" class="form-label">Full Name</label>
+              <input id="name" name="name" type="text" class="form-control" placeholder="Your full name" required>
+              <div class="invalid-feedback">Please enter your name.</div>
+            </div>
+
+            <div class="mb-3">
+              <label for="phone" class="form-label">Phone Number</label>
+              <input id="phone" name="phone" type="tel" class="form-control" placeholder="10 digit phone" pattern="[0-9]{10}" required>
+              <div class="invalid-feedback">Please enter a valid 10-digit phone number.</div>
+            </div>
+
+            <div class="mb-3">
+              <label for="email" class="form-label">Email (optional)</label>
+              <input id="email" name="email" type="email" class="form-control" placeholder="you@example.com">
+            </div>
+
+            <div class="mb-3">
+              <label for="service" class="form-label">Select Service</label>
+              <select id="service" name="service" class="form-select" required>
+                <option value="">Choose a service</option>
+                <option>Car Wash & Detailing</option>
+                <option>Engine Diagnostics</option>
+                <option>Denting & Painting</option>
+                <option>Oil Change</option>
+              </select>
+              <div class="invalid-feedback">Please choose a service.</div>
+            </div>
+
+            <div class="mb-3">
+              <label for="date" class="form-label">Preferred Date</label>
+              <input id="date" name="date" type="date" class="form-control" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="message" class="form-label">Additional Details</label>
+              <textarea id="message" name="message" rows="4" class="form-control" placeholder="Any additional info"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit Booking</button>
+          </form>
+        </div>
+
+        <div class="col-lg-6">
+          <h4 class="mb-3">Visit Us</h4>
+          <!-- Embedded map (keeps your provided link embedded format) -->
+          <div class="ratio ratio-16x9 mb-3">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3795.260155727176!2d78.69169987495853!3d18.824910583069572!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcd0bf9f945b997%3A0x85404a95de8c45e2!2s2%20Metpally%20Road%2C%20Jagtial%20Rd%2C%20Korutla%2C%20Telangana%20505326!5e0!3m2!1sen!2sin!4v1698416640381!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+
+          <address>
+            <strong>Address</strong><br>
+            Near SFS School, Korutla, Jagtial Dist, 505325, Telangana<br>
+            <abbr title="Phone">P:</abbr> <a href="tel:+919876543210">+91 98765 43210</a><br>
+            <strong>Timings:</strong> Mon–Sat: 9 AM – 7 PM | Sunday Closed
+          </address>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-light py-4">
+    <div class="container">© Sri Vijayadurga Car Garage</div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
